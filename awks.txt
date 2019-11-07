@@ -1,0 +1,1 @@
+awk 'NR%5 {printf("%s", $0); next} {print $0} ' infile > newfile # merges 5 lines into one with comma
